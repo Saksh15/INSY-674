@@ -12,7 +12,9 @@ from src.config.core import config
 from src.monitoring.drift import build_drift_baseline
 from src.pipeline import pipe
 from src.processing.data_manager import load_dataset, save_metadata, save_pipeline
-
+#sk changes
+import shap
+import matplotlib.pyplot as plt
 
 def _get_git_sha() -> str:
     """Get current git commit SHA, or 'unknown' if not in a git repo."""
